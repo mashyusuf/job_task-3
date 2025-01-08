@@ -1,0 +1,57 @@
+/* General Styling */
+.product-category {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .product-category h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Row Styling */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  /* Column Styling */
+  .col {
+    flex: 1 1 100%; /* Default: full width */
+    max-width: 150px; /* Restrict column width */
+    text-align: center;
+    position: relative;
+  }
+  
+  .col p {
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .col span {
+    margin-left: 5px;
+  }
+  
+  /* Sunscreen Styling */
+  .sunscreen img {
+    margin-top: 10px;
+    width: 60px;
+    height: auto;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .col {
+      flex: 1 1 calc(50% - 20px); /* 2 columns on medium screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .col {
+      flex: 1 1 calc(33.33% - 20px); /* 3 columns on large screens */
+    }
+  }
+  
